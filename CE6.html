@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Producto</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/estiloProducto.css">
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!-- Scripts -->
+
+
+    <script>
+        $(document).ready(function () {
+            $(".owl-carousel").owlCarousel({
+                loop: true,
+                margin: 10,
+                autoplay: true,
+                autoplayTimeout: 3000,
+                autoplayHoverPause: true,
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    600: {
+                        items: 3
+                    },
+                    1000: {
+                        items: 5
+                    }
+                }
+            });
+            $(".play").on("click", function () {
+                owl.trigger("play.owl.autoplay", [1000]);
+            });
+            $(".stop").on("click", function () {
+                owl.trigger("stop.owl.autoplay");
+            });
+        });
+    </script>
+
+</head>
+<!-- Header -->
+<header class="header justify-content-sm-center" id="header">
+    <div class="container-fluid">
+        <div class="row d-flex justify-content-around">
+            <a class="logo align-items-center py-3" href="#">
+                <img src="img/moon.png" class="d-inline-block" alt="logo">
+            </a>
+            <div class="py-5">
+                <ul class="nav usuario text-dark">
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="login.html"><i class="fas fa-sign-in-alt"></i> <span
+                                class="d-none d-md-inline-block text-dark">Ingresar</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="registrar.html"><i class="fas fa-user-plus"></i> <span
+                                class="d-none d-md-inline-block text-dark">Registrarse</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="#" data-toggle="canvas" data-target="#carroDeCompras"
+                            aria-expanded="false" aria-controls="carroDeCompras"><i class="fas fa-shopping-cart"></i>
+                            <span class="text-dark">(<span id="cartCount">0</span>)</span></a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-dark d-flex justify-content-around">
+        <div class="">
+            <div class="jutify-content-md-center">
+                <button class="navbar-toggler collapsed justify-content-sm-center" type="button" data-toggle="collapse"
+                    data-target="#navbarsExample08" aria-controls="navbarsExample08" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+            <div class="navbar-collapse justify-content-md-center collapse" id="navbarsExample08">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">HOME<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Notebook.html">Notebooks</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="PC.html">PC</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Celulares.html">Celulares</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="formulario.html">Contactanos</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<body>
+    <div class="container">
+        <div class="image-container">
+            <img src="img/Celulares/c6.png" alt="Imagen del producto">
+        </div>
+        <div class="product-description">
+            <h1>Realme C35 Glowing Black</h1>
+            <ul>
+                <li>Procesador: Unisoc Tiger T616 </li>
+                <li>Ram: 4GB</li>
+                <li>Pulgadas: 6,5</li>
+                <li>Sistema operativo: Android 13</li>
+                <li>Almacenamiento:128 GB</li>
+            </ul>
+            <h3>$299.990</h3>
+            <button>Comprar</button>
+        </div>
+    </div>
+    <footer>
+
+
+        <!-- Grid column -->
+        </div>
+        <!-- Grid row-->
+        <hr class="rgba-white-light" style="margin: 0 15%;">
+        <!-- Grid row-->
+        <hr class="clearfix d-md-none rgba-white-light" style="margin: 10% 15% 5%;">
+        <!-- Grid row-->
+        <div class="row p-3">
+            <!-- Grid column -->
+            <div class="col-md-12">
+                <div class="mb-3 d-flex justify-content-center socialicons">
+
+                    <!-- Facebook -->
+                    <a class="fb-ic" href="facebook.com">
+                        <i class="fab fa-facebook-f fa-lg white-text mr-4"> </i>
+                    </a>
+                    <!-- Twitter -->
+                    <a class="tw-ic" href="twitter.com">
+                        <i class="fab fa-twitter fa-lg white-text mr-4"> </i>
+                    </a>
+                    <!--Linkedin -->
+                    <a class="li-ic" href="linkedin.com">
+                        <i class="fab fa-linkedin-in fa-lg white-text mr-4"> </i>
+                    </a>
+                    <!--Instagram-->
+                    <a class="ins-ic" href="instagram.com">
+                        <i class="fab fa-instagram fa-lg white-text mr-4"> </i>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+        </div>
+
+
+        <div class="footer-copyright text-center py-3">© 2021 Copyright Technology Moon</div>
+
+    </footer>
+
+</body>
+
+
+</html>

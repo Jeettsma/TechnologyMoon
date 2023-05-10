@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Carrito de compras</title>
+	<link rel="stylesheet" type="text/css" href="css/estilos.css">
+</head>
+
+<body>
+	<div class="carrito">
+		<h1>Carrito de compras</h1>
+		<table>
+			<tr>
+				<th>Producto</th>
+				<th>Cantidad</th>
+				<th>Precio</th>
+				<th>Total</th>
+			</tr>
+			<tr>
+				<td>Producto 1</td>
+				<td><input type="number" name="cantidad1"></td>
+				<td>$10.00</td>
+				<td>$<span id="total1">0.00</span></td>
+			</tr>
+			<tr>
+				<td>Producto 2</td>
+				<td><input type="number" name="cantidad2"></td>
+				<td>$20.00</td>
+				<td>$<span id="total2">0.00</span></td>
+			</tr>
+			<tr>
+				<td>Producto 3</td>
+				<td><input type="number" name="cantidad3"></td>
+				<td>$30.00</td>
+				<td>$<span id="total3">0.00</span></td>
+			</tr>
+			<tr>
+				<td colspan="3">Total:</td>
+				<td>$<span id="total">0.00</span></td>
+			</tr>
+		</table>
+		<button onclick="calcularTotal()">Calcular Total</button>
+	</div>
+	<script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/estilos.css">
+  <link rel="stylesheet" href="css/flexboxgrid.min.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="https://i.icomoon.io/public/temp/c58a1c70eb/UntitledProject/style.css">
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+    integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+
+
+  <!-- Scripts -->
+  <script src="https://kit.fontawesome.com/0342bcb922.js"></script>
+  <script src="js/jquery-3.4.1.js"></script>
+  <script src="js/owl.carousel.js"></script>
+  <script src="js/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
+    integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous">
+    </script>
+
+  <script>
+    $(document).ready(function () {
+      $(".owl-carousel").owlCarousel({
+        loop: true,
+        margin: 10,
+        autoplay: true,
+        autoplayTimeout: 3000,
+        autoplayHoverPause: true,
+        responsive: {
+          0: {
+            items: 1
+          },
+          600: {
+            items: 3
+          },
+          1000: {
+            items: 5
+          }
+        }
+      });
+      $(".play").on("click", function () {
+        owl.trigger("play.owl.autoplay", [1000]);
+      });
+      $(".stop").on("click", function () {
+        owl.trigger("stop.owl.autoplay");
+      });
+    });
+  </script>
+  <title>Technology Moon</title>
+
+</head>
+
+<body <!-- Encabezado-logo-Links superiores -->
+  <!-- Header -->
+  <header class="header justify-content-sm-center" id="header">
+    <div class="container-fluid">
+        <div class="row d-flex justify-content-around">
+            <a class="logo align-items-center py-3" href="#">
+                <img src="img/moon.png" class="d-inline-block" alt="logo">
+            </a>
+            <div class="py-5">
+                <ul class="nav usuario text-dark">
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="login.html"><i class="fas fa-sign-in-alt"></i> <span
+                                class="d-none d-md-inline-block text-dark">Ingresar</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="registrar.html"><i class="fas fa-user-plus"></i> <span
+                                class="d-none d-md-inline-block text-dark">Registrarse</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="#" data-toggle="canvas" data-target="#carroDeCompras"
+                            aria-expanded="false" aria-controls="carroDeCompras"><i class="fas fa-shopping-cart"></i>
+                            <span class="text-dark">(<span id="cartCount">0</span>)</span></a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-dark d-flex justify-content-around">
+      <div class="">
+        <div class="jutify-content-md-center">
+          <button class="navbar-toggler collapsed justify-content-sm-center" type="button" data-toggle="collapse"
+            data-target="#navbarsExample08" aria-controls="navbarsExample08" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+        <div class="navbar-collapse justify-content-md-center collapse" id="navbarsExample08">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">HOME<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Notebook.html">Notebooks</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="PC.html">PC</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Celulares.html">Celulares</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="formulario.html">Contactanos</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+
+
+
+  <!-- Contenido Fuera del Encabezado -->
+  <div class="contenido_wrap">
+
+    <!-- Sección de Ofertas -->
+    <section class="row">
+      <article id="Oferta" class="col-xs-12 col-sm-12 col-md-12 col-lg-12 ">
+        <div>
+          <h1>¡Conoce nuestro catálogo de PC!</h1>
+          <br>
+
+        </div>
+
+        <div class="row">
+          <div class="col-md-4 mb-4">
+            <div class="card h-100">
+              <a href="P1.html">
+                <img src="img/PC/pc1.png" class="card-img-top" alt="...">
+              </a>
+              <div class="card-body">
+                <h5 class="card-subtitle mb-2 text-muted">$$1.999.990</h5>
+                <a href="#" class="btn btn-dark">Agregar al carrito</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card h-100">
+              <a href="P2.html">
+                <img src="img/PC/pc2.png" class="card-img-top" alt="...">
+              </a>
+              <div class="card-body">
+                <h5 class="card-subtitle mb-2 text-muted">$2.599.990</h5>
+                <a href="#" class="btn btn-dark">Agregar al carrito</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card h-100">
+              <a href="P3.html">
+                <img src="img/PC/pc3.webp" class="card-img-top" alt="...">
+              </a>
+              <div class="card-body">
+                <h5 class="card-subtitle mb-2 text-muted">$1.599.990</h5>
+                <a href="#" class="btn btn-dark">Agregar al carrito</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <section class="row">
+          <article id="Oferta" class="col-xs-12 col-sm-12 col-md-12 col-lg-12 ">
+            <div>
+            </div>
+          </article>
+
+          <div class="row">
+            <div class="col-md-4 mb-4">
+              <div class="card h-100">
+                <a href="P4.html">
+                  <img src="img/PC/pc4.png" class="card-img-top" alt="...">
+                </a>
+                <div class="card-body">
+                  <h5 class="card-subtitle mb-2 text-muted">$$1.699.990</h5>
+                  <a href="#" class="btn btn-dark">Agregar al carrito</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 mb-4">
+              <div class="card h-100">
+                <a href="P5.html">
+                  <img src="img/PC/pc5.png" class="card-img-top" alt="...">
+                </a>
+                <div class="card-body">
+                  <h5 class="card-subtitle mb-2 text-muted">$1.729.990</h5>
+                  <a href="#" class="btn btn-dark">Agregar al carrito</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 mb-4">
+              <div class="card h-100">
+                <a href="P6.html">
+                  <img src="img/PC/pc6.png" class="card-img-top" alt="...">
+                </a>
+                <div class="card-body">
+                  <h5 class="card-subtitle mb-2 text-muted">$699.990</h5>
+                  <a href="#" class="btn btn-dark">Agregar al carrito</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+
+        <!-- Footer -->
+        <footer>
+          <!-- Footer Links -->
+          <div class="container">
+
+            <!-- Grid column -->
+          </div>
+          <!-- Grid row-->
+          <hr class="rgba-white-light" style="margin: 0 15%;">
+          <!-- Grid row-->
+          <hr class="clearfix d-md-none rgba-white-light" style="margin: 10% 15% 5%;">
+          <!-- Grid row-->
+          <div class="row p-3">
+            <!-- Grid column -->
+            <div class="col-md-12">
+              <div class="mb-3 d-flex justify-content-center socialicons">
+
+                <!-- Facebook -->
+                <a class="fb-ic" href="facebook.com">
+                  <i class="fab fa-facebook-f fa-lg white-text mr-4"> </i>
+                </a>
+                <!-- Twitter -->
+                <a class="tw-ic" href="twitter.com">
+                  <i class="fab fa-twitter fa-lg white-text mr-4"> </i>
+                </a>
+                <!--Linkedin -->
+                <a class="li-ic" href="linkedin.com">
+                  <i class="fab fa-linkedin-in fa-lg white-text mr-4"> </i>
+                </a>
+                <!--Instagram-->
+                <a class="ins-ic" href="instagram.com">
+                  <i class="fab fa-instagram fa-lg white-text mr-4"> </i>
+                </a>
+              </div>
+            </div>
+
+          </div>
+
+  </div>
+
+
+  <div class="footer-copyright text-center py-3">© 2021 Copyright Technology Moon</div>
+
+  </footer>
+
+
+  </div>
+  </div>
+
+
+
+</html>
